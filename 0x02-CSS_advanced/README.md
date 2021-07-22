@@ -73,15 +73,14 @@ For this project, students are expected to look at these concepts:
     
     </details>
 
-   <br>
 
 1. <details>
    <summary>Effortless transitions when scrolling</summary>
+   <br>
 
    When scrolling is triggered on the `html` element itself, we’d like the behavior of the scroll to be as fluid as possible.
 
-   </details>
-   <br>
+   </details> 
 2. <details>
    <summary>Do you know your color values?</summary>
 
