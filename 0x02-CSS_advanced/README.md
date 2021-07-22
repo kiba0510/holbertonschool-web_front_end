@@ -63,7 +63,7 @@ For this project, students are expected to look at these concepts:
 ## Tasks
 
 0. <details>
-   <summary> **Let's get some images** ! </summary>
+   <summary>Let's get some images!</summary>
 
     The description of the project contains some inspiration for the final look of the project but we’ll have to download some images.
 
