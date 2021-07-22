@@ -61,10 +61,10 @@ For this project, students are expected to look at these concepts:
 <hr>
 
 ## Tasks
-0. <details>
-   <summary>Let's get some images!</summary>
 
-  
+0. <details>
+   <summary> **Let's get some images** ! </summary>
+
     The description of the project contains some inspiration for the final look of the project but we’ll have to download some images.
 
     Head to unsplash and download 10 high resolution images that look as close to the final product that you’re going to make. You will be using these same high res images for a project on Responsive Design in the future. Remember to also include the 3 images (the 2 logos and the favicon) linked in the description of the project.
@@ -72,10 +72,74 @@ For this project, students are expected to look at these concepts:
     The images should all be representative of category they belong to. Images in the work category should be closely related to work.
     
     </details>
+
+   <br>
+
 1. <details>
    <summary>Effortless transitions when scrolling</summary>
 
-   ```json
+   When scrolling is triggered on the `html` element itself, we’d like the behavior of the scroll to be as fluid as possible.
+
+   </details>
+   <br>
+2. <details>
+   <summary>Do you know your color values?</summary>
+
+   Based on `styles/1-style.css`, create the following declarations:
+
+   * For the `body`, set the foreground color value to `#161616`
+   * For all anchor elements, set the foreground color value to `#161616`
+   * All elements with the class ```visually-hidden``` should have their display to `none`
+   * All elements with the class `card-category`, should have their foreground color set to `#D73953`
+   * All elements with the class `section-tagline` should have their foreground color set to `#D73953`
+
+   </details>
+3. <details>
+   <summary>Reuse and repeat. A programmer's life should be simple with variables</summary>
+
+   ```
+
+   ```
+   </details>
+4. <details>
+   <summary>Variables for storing certain font types</summary>
+
+   ```
+
+   ```
+   </details>
+5. <details>
+   <summary>Variables for the font size</summary>
+
+   ```
+
+   ```
+   </details>
+6. <details>
+   <summary>Variables for the font-weight</summary>
+
+   ```
+
+   ```
+   </details>
+7. <details>
+   <summary>Integrating Google Fonts into the CSS file</summary>
+
+   ```
+
+   ```
+   </details>
+8. <details>
+   <summary>Defining line heights</summary>
+
+   ```
+
+   ```
+   </details>
+9. <details>
+   <summary>Links are decorated by default, time to remove them</summary>
+
+   ```
 
    ```
    </details>
