@@ -64,10 +64,10 @@ For this project, students are expected to look at these concepts:
 0. <details>
    <summary>Let's get some images!</summary>
 
-    ```md
+    ```json
     The description of the project contains some inspiration for the final look of the project but we’ll have to download some images.
 
-    Head to [unsplash](https://intranet.hbtn.io/rltoken/229_BXHxgUfzVJUNFXXCIw) and download 10 high resolution images that look as close to the final product that you’re going to make. You will be using these same high res images for a project on Responsive Design in the future. Remember to also include the 3 images (the 2 logos and the favicon) linked in the description of the project.
+    Head to unsplash and download 10 high resolution images that look as close to the final product that you’re going to make. You will be using these same high res images for a project on Responsive Design in the future. Remember to also include the 3 images (the 2 logos and the favicon) linked in the description of the project.
 
     The images should all be representative of category they belong to. Images in the work category should be closely related to work.
     ```
