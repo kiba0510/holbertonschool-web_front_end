@@ -5,13 +5,13 @@
   --color-light-grey: #f3f3f3;
   --color-dark-grey: #353535;
   --text-color: var(--color-black);
-  --font-family-base: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  --font-family-title: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-family-base: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  --font-family-title: --font-family-base;
   --font-size-small: 1.2rem;
   --font-size-medium: 1.6rem;
   --font-size-large: 1.8rem;
   --font-size-x-large: 2.3rem;
-  --font-size-xx-large: 4.8 rem;
+  --font-size-xx-large: 4.8rem;
   --font-weight-regular: 400;
   --font-weight-bold: 700;
 }
@@ -19,12 +19,6 @@
 html {
   scroll-behavior: smooth;
   font-size: 62.5%;
-}
-
-body {
-  color: #161616;
-  font-size: var(--font-size-medium);
-  font-weight: var(--font-weight-regular);
 }
 
 h1,
@@ -37,6 +31,13 @@ h6 {
   font-weight: var(--font-weight-bold);
 }
 
+body {
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-medium);
+  font-weight: var(--font-weight-regular);
+}
+
+body,
 a {
   color: var(--text-color);
 }
@@ -45,10 +46,7 @@ a {
   display: none;
 }
 
-.card-category {
-  color: #d73953;
-}
-
+.card-category,
 .section-tagline {
-  color: #d73953;
+  color: var(--color-primary);
 }
