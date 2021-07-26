@@ -201,7 +201,10 @@ ul.row {
 }
 
 /* Task 20 */
-.row {
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 /* Task 21 */
