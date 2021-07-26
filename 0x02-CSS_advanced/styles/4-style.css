@@ -19,6 +19,7 @@ body {
 
 a {
   color: #161616;
+  font-family: var(--font-family-title);
 }
 
 .visually-hidden {
