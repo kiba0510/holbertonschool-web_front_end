@@ -186,14 +186,26 @@ ul.row {
   width: 33.33%;
 }
 
+.col-1-2 {
+  width: 50%;
+}
+
+.footer-copyright {
+  margin: 0;
+  font-size: var(--font-size-small);
+  color: var(--text-color);
+}
+
+.footer ul {
+  text-align: right;
+}
+
 /* Task 20 */
-.row::after {
-  content: "";
-  display: table;
-  clear: both;
+.row {
 }
 
 /* Task 21 */
+
 [class^="col-"] {
   float: left;
   padding: 0.5rem;
