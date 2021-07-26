@@ -27,6 +27,7 @@
   --section-footer-padding: 3rem 0 0;
   --section-footer-align: center;
   --footer-padding: 5rem 0 1rem;
+  /* Task 18 */
   --nav-item-font-family: var(--font-family-title);
   --nav-item-font-weight: var(--font-weight-bold);
   --nav-item-font-size: var(--font-size-medium);
@@ -34,6 +35,7 @@
   --nav-item-display: inline-block;
   --nav-item-margin: 0 0 3rem 0;
   --nav-item-link-hover: var(--color-primary);
+  /* Task 19 */
   --section-tagline-margin: 0;
 }
 
@@ -129,6 +131,8 @@ a:active {
   font-family: var(--font-family-title);
   text-transform: var(--section-tagline-transform);
   font-weight: var(--font-weight-bold);
+  /* Task 19 */
+  margin: var(--section-tagline-margin);
 }
 
 .container {
@@ -141,11 +145,11 @@ a:active {
   padding: var(--footer-padding);
 }
 
+/* Task 18 */
 .navbar-menu {
   float: right;
 }
 
-/* Task 18 */
 .nav {
   margin: 0;
   padding: 0;
