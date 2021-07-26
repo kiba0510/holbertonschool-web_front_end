@@ -242,7 +242,7 @@ ul.row {
 .card-services a {
   display: block;
   padding: 2rem;
-  background-color: var(--color-primary);
+  background-color: var(--color-light-grey);
 }
 
 .card-services a:hover {
