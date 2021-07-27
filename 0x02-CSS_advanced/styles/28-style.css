@@ -47,7 +47,7 @@
   --button-hover-color: var(--color-white);
   --button-hover-text-decoration: none;
   --button-hover-background: var(--color-primary);
-  /* task 28 */
+  /* Task 28 */
   --header-padding: 4rem 0 0;
   --header-logo-position: relative;
   --header-logo-link-display: inline-block;
@@ -316,9 +316,10 @@ ul.row {
   padding: 10rem 40rem 2rem 0;
 }
 
-/* task 28 */
+/* Task 28 */
+
 .header {
-  padding: var(--section-header-padding);
+  padding: var(--header-padding);
 }
 
 .header-logo {
