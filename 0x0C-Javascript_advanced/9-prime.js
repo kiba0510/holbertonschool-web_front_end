@@ -1,0 +1,31 @@
+// Prime numbers & timing execution
+
+function countPrimeNumbers() {
+    let numOfPrimeNums = 0;
+
+    function isPrime(number) {
+        status = 1;
+        if (number < 2) {
+            status = 0;
+        } else {
+            for (let i = 2; i < number; i++) {
+                if (number % 1 === 0) {
+                    status = 0;
+                }
+            }
+        }
+        return status;
+    }
+    for (let num = 2; num < 101; num++) {
+        if (isPrime(num) == 1) {
+            numOfPrimeNums += 1;
+        }
+    }
+    return numOfPrimeNums;
+}
+
+let a = performance.now();
+countPrimeNumbers();
+
+let b = performance.now();
+console.log('Excution time of printing countPrimeNumbers was ' + (b - a) + 'milliseconds');
