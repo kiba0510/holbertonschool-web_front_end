@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Minified JQUERY -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <!-- Slim JQUERY -->
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.js"
+        integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY=" crossorigin="anonymous"></script>
+
+    <title>Document</title>
+
+    <script type="application/javascript">
+        window.onload = function () {
+            // Create search form
+            function createSearchForm() {
+                $("body").append(`
+                    <form>
+                        <input type="text">
+                        <input type="submit">
+                    </form>
+                    <ul></ul>
+                `);
+
+                $('form').submit(function (e) {
+                    e.preventDefault();
+                });
+
+                $("form input:submit").click(function () {
+                    queryWikipedia(
+                        $("input").first().val()
+                    );
+                });
+
+            }
+            // add items to a list
+            function addNewArticle(id, title, snippet) {
+                listItem = `
+                    <li>
+                        <p><span>${id} - <b>${title}</b></span></p>
+                        <p>${snippet}</p>
+                    </li>
+                `;
+
+                $("ul").append(listItem);
+            }
+            // Get from API function
+            function queryWikipedia(search) {
+                let url = "https://en.wikipedia.org/w/api.php";
+
+                let params = {
+                    action: "query",
+                    list: "search",
+                    srsearch: search,
+                    format: "json"
+                };
+
+                url = url + "?origin=*";
+                Object.keys(params).forEach(function (key) { url += "&" + key + "=" + params[key]; });
+
+                $.get(url, function (response, status) {
+                    if (status == 'success') {
+                        // Add each item to list
+                        response.query.search.forEach(function (result) {
+                            addNewArticle(result.pageid, result.title, result.snippet)
+                        });
+                    }
+                })
+            }
+            createSearchForm();
+        }
+    </script>
+</head>
+
+<body>
+    <!-- Creating the paragraph element -->
+
+</body>
+
+</html>
