@@ -77,9 +77,23 @@
                     }
                 })
             }
-            createSearchForm();
         }
+        function displayLoading(loading) {
+            if (loading === true) {
+                $('ul:first').wrap('<div class="loading"></div>');
+            } else {
+                $('ul:first').unwrap();
+            }
+        }
+        $(document).ready(createSearchForm);
     </script>
+
+    <!-- Styles -->
+    <style>
+        .loading {
+            opacity: 0.2;
+        }
+    </style>
 </body>
 
 </html>
