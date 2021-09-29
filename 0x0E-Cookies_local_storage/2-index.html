@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 2</title>
+</head>
+
+<body>
+    <!-- Create Cookies -->
+    <h1>Login to the Website</h1>
+    <form>
+        <input type="text" id="firstName" value="Firstname">
+        <input type="text" id="email" value="Email">
+        <button onclick="setCookies();">
+            Log me in
+        </button>
+    </form>
+
+    <!-- Show Cookies -->
+    <h1>Cookies</h1>
+    <button onclick="showCookies();">
+        Show me the Cookies
+    </button>
+
+    <script type="text/javascript">
+        function setCookies() {
+            let firstName = document.getElementById('Firstname').value;
+            let email = document.getElementById('Email').value;
+            // Setting Expiration date to 10 days
+            let expDate = new Date(Date.now() + (10 * 24 * 60 * 60 * 1000));
+            expDate = expDate.toUTCString();
+
+            document.cookie = `firstName = ${firstName}`;
+            document.cookie = `email = ${email}`;
+        }
+
+        function showCookies() {
+            const paragraph = `Email: ${getCookie('email')} - Firstname: ${getCookie('firstName')}`
+            let p = document.createElement('p').innerHTML = paragraph;
+            document.body.append(p);
+        }
+
+        // New getCookie function
+        function getCookie(name) {
+            name = name + '=';
+            let decodeCookie = decodeURIComponent(document.cookie);
+            let ca = decodeCookie.split(';');
+
+            for (let i = 0; i < ca.length; i++) {
+                let c = ca[i];
+                while (c.charAt(0) == ' ') {
+                    c = c.substring(1);
+                }
+                if (c.indexOf(name) == 0) {
+                    return c.substring(name.length, c.length);
+                }
+            }
+            return '';
+        }
+    </script>
+</body>
+
+</html>
